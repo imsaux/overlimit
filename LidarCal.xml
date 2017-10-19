@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<lines>
+  <Line name="北环" status="1">
+    <caltime no="1" source="E:\测试相关\7月双激光雷达超限改造系统\标定工具\axismod0720\20160804195852\2016年08月04日19时58分52秒AllScanData_lms.lms" version="1.0.0.160801" time="2016-08-05 14:18:39">
+      <right_radar w2="0.00" w1="0.00" score="0.00" delta_th="3.31" delta_y="5639.40" delta_x="2296.34">
+        <input_par radarheight="6000" road_radar_dis="1450"></input_par>
+        <cali_par road_radar_dis="1450.00" radarheight="5756.00" roadwidth="1640.00"/>
+      </right_radar>
+      <left_radar w2="0.00" w1="0.00" score="0.00" delta_th="-2.1" delta_y="5643.11" delta_x="2345.76">
+        <input_par radarheight="6000" road_radar_dis="1250"></input_par>
+        <cali_par road_radar_dis="1450.00" radarheight="5709.00" roadwidth="1621.00"/>
+      </left_radar>
+      <cut number="0"/>
+    </caltime>
+    <caltime no="2" source="E:\测试相关\7月双激光雷达超限改造系统\标定工具\axismod0720\20160804195852\2016年08月04日19时58分52秒AllScanData_lms.lms" version="1.0.0.160801" time="2016-08-05 14:18:39">
+      <input_par height="3000" width="1550"></input_par>
+      <cali_par max_height="3000" min_height="3000" max_width="1550" min_width="1550" avg_height="1550" avg_width="1550" />
+    </caltime>
+  </Line>
+</lines>
