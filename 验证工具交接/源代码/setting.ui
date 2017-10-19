@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uiSetting</class>
+ <widget class="QDialog" name="uiSetting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>341</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>验证参数设置</string>
+  </property>
+  <widget class="QTreeWidget" name="treeWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>参数名称</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>参数值</string>
+    </property>
+   </column>
+   <item>
+    <property name="text">
+     <string>超限报警车阈值</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>敞车</string>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsEditable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>棚车</string>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>目录</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>日志根目录</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>数据根目录</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>API根目录</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>数据库</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>服务器（地址）</string>
+     </property>
+     <property name="text">
+      <string>local</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>用户名</string>
+     </property>
+     <property name="text">
+      <string>sa</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>密码</string>
+     </property>
+     <property name="text">
+      <string>123456</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>数据库名</string>
+     </property>
+     <property name="text">
+      <string>Tran</string>
+     </property>
+    </item>
+   </item>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>290</y>
+     <width>381</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="btnSave">
+      <property name="text">
+       <string>保存</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnClose">
+      <property name="text">
+       <string>关闭</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>验证工具</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btnStart">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>375</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始</string>
+    </property>
+   </widget>
+   <widget class="QTreeWidget" name="trShow">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>581</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="columnCount">
+     <number>2</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>验证项</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>结果</string>
+     </property>
+    </column>
+    <item>
+     <property name="text">
+      <string>设备状态检查</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>雷达网络运行状态检查</string>
+      </property>
+      <property name="text">
+       <string>正常</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>测量系统运行状态检查</string>
+      </property>
+      <property name="text">
+       <string>正常</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>串口运行状态检查</string>
+      </property>
+      <property name="text">
+       <string>正常</string>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>数据质量检查</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>标定完整性检查</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>测量数据完整性检查</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>传输数据完整性检查</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>车号识别率</string>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>测量性能验证</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>标定误差验证</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>标准车型测量误差验证</string>
+      </property>
+      <property name="flags">
+       <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>超限报警车型验证</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>超限报警车3D图性能验证</string>
+      </property>
+     </item>
+    </item>
+   </widget>
+   <widget class="QDateTimeEdit" name="startDate">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>194</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDateTimeEdit" name="endDate">
+    <property name="geometry">
+     <rect>
+      <x>385</x>
+      <y>10</y>
+      <width>194</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>54</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始时间</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>317</x>
+      <y>11</y>
+      <width>54</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>结束时间</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="actionOptions"/>
+    <addaction name="actionshouxuanxiang"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>导出</string>
+    </property>
+    <addaction name="actionPDF"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOptions">
+   <property name="text">
+    <string>验证参数</string>
+   </property>
+  </action>
+  <action name="actionshouxuanxiang">
+   <property name="text">
+    <string>首选项</string>
+   </property>
+  </action>
+  <action name="actionPDF">
+   <property name="text">
+    <string>PDF</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
